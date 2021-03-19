@@ -50,8 +50,6 @@ p {
   margin: 0 auto;
 }
 
-/* Header  */
-
 header {
   width: 100%;
   position: absolute;
@@ -166,25 +164,20 @@ header {
 
 .cb-slideshow,
 .cb-slideshow:after { 
-  position: fixed;
+  position: relative;
   width: 100%;
-  height: 100%;
-  top: 0;
+  height: 40rem;
+  top: 5.2rem;
   left: 0;
-  z-index: 0; 
-}
-
-.cb-slideshow:after { 
-  content: '';
-  /* background: transparent url(../images/pattern.png) repeat top left;  */
+  z-index: 0;
 }
 
 .cb-slideshow li span { 
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   color: transparent;
   background-size: cover;
   background-position: 50% 50%;
@@ -201,7 +194,7 @@ header {
 .cb-slideshow li div { 
   z-index: 1000;
   position: absolute;
-  bottom: 13rem;
+  bottom: 20rem;
   left: 0;
   width: 100%;
   text-align: center;
@@ -471,6 +464,197 @@ header {
 /* Show at least something when animations not supported */
 .no-cssanimations .cb-slideshow li span{
 	opacity: 1;
+}
+
+/* Core area tabs */
+.core-area,
+.services,
+.counter-holder {
+  position: relative;
+  width: 100%;
+  padding: 0 2rem;
+  background-color: #f8f2f2;
+}
+
+.tab-box {
+  position: relative;
+  background: #fff;
+  bottom: 5.2rem;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  color: var(--main-font-color-blue);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.9rem 1rem;
+  transition: 0.3s;
+  font-size: 1rem;
+  width: 100%;
+  height: 5.2rem;
+}
+
+#tab-1-head {
+  display: block;
+}
+
+.tab i {
+  padding: 0.6rem;
+  color: #000;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: var(--secondary-font-color);
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding-top: 2rem;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.tab-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.tab-text {
+  width: 20rem;
+  height: 20rem;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+.tab-text p {
+  font-size: 1.1rem;
+  padding-top: 1rem;
+}
+
+.tab-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: none;
+}
+
+#tab-img1,
+#tab-img2,
+#tab-img3 {
+  /* /* height: 25rem;  */
+  /* width: 30rem; */
+  /* margin-left: 1rem; */
+  height: 15rem;
+  width: 20rem;
+  margin: 0 auto;
+}
+
+#tab-img1 {
+  background-image: url(../images/smart-build.jpg); 
+}
+
+#tab-img2 {
+  background-image: url(../images/fire-and-gas.jpg);
+}
+
+#tab-img3 {
+  background-image: url(../images/gen-mainte.jpg);
+}
+
+/* Our services */
+.services-box {
+  display: flex;
+  flex-direction: column;
+}
+.per-service {
+  width: 25rem;
+  height: 15rem;
+  margin: 0 auto 2rem auto;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.services h2,
+.services-box h4 {
+  font-family: var(--main-font);
+  color: var(--main-font-color-blue);
+  text-align: center;
+}
+
+.services h2 {
+  margin-bottom: 2rem;
+}
+
+.services-box h4 {
+  padding: 2rem;
+}
+
+.service-img-box {
+  width: 7rem;
+  height: 7rem;
+}
+
+.service-img-box img {
+  padding-top: 1rem;
+}
+
+/* Counter */
+.counter-holder {
+  background-image: linear-gradient(to bottom, rgba(76, 77, 80, 0.52), rgba(107, 36, 89, 0.73)),
+  url(../images/counter-bgrnd.jpg);
+  width: 100%;
+  background-size: cover;
+}
+
+.img-holder {
+  height: 3rem;
+  width: 3rem;
+}
+
+.counter {
+  padding: 0.7rem 0;
+  font-size: 1.4rem;
+  color: #fff;
+  font-family: var(--body-font-color);
+}
+.per-counter h4 {
+  padding: 0;
+  color: #ccc;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+.per-counter {
+  height: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bolder;
 }
 
 
