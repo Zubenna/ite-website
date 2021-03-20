@@ -48,22 +48,22 @@ function openCity(evt, tabId) {
 // Implement Counter
 
 const counters = document.querySelectorAll(".counter");
-const speed =0.4;
+const speed = 800;
 
 counters.forEach(count => {
   const updateCounter = () => {
   const ourTarget = +count.getAttribute('data-target');
   const ourCounter = +count.innerText;
-
-  const increment = ourTarget / ourCounter;
-
+  const increment = ourTarget / speed;
+ 
   if(ourCounter < ourTarget){
-    count.innerText = Math.ceil(ourCounter + increment);
+    count.innerText = (ourCounter + increment).toFixed(2);
     setTimeout(updateCounter, 1)
   } else {
-    ourCounter.innerText = ourTarget;
+    count.innerText = ourTarget;
+    console.log(count.innerText);
   }
+  
   }
-
 updateCounter();
 });
