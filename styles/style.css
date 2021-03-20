@@ -41,7 +41,7 @@ a {
 }
 
 p {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 
 .container {
@@ -655,6 +655,73 @@ header {
   align-items: center;
   flex-direction: column;
   font-weight: bolder;
+}
+
+/* Our Projects */
+.project-lead {
+  text-align: center;
+}
+
+.project-lead h2 {
+  color: var(--main-font-color-blue);
+  font-family: var(--secondary-font);
+  padding-top: 4rem;
+  font-weight: bold;
+}
+
+.project-img {
+  width: 28rem;
+  max-width: 100%;
+  opacity: 0.7;
+}
+
+.project-img:hover {
+  transition: .5s ease;
+  opacity: 1;
+  max-width: 100%;
+  width: 30rem;
+}
+
+.project-lead p {
+  padding-top: 2rem;
+}
+
+.per-project-box,
+.per-project {
+  display: flex;
+  flex-direction: column;
+}
+
+.per-project-box {
+  margin-top: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-box {
+  padding: 1.5rem;
+}
+
+.per-project {
+  margin-bottom: 2rem;
+}
+
+#project-one {
+  background-size: cover;
+}
+
+.project-name {
+  position: relative;
+  bottom: 0.4rem;
+  height: 4rem;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-family: var(--secondary-font);
+  font-size: 1.5rem;
+  padding: 1rem;
+  font-weight: bold;
+  background-color: var(--main-font-color-blue);
 }
 
 
