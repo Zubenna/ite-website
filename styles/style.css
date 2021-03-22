@@ -670,7 +670,8 @@ header {
 }
 
 /* Our Projects */
-.project-lead {
+.project-lead,
+.team-heading p {
   text-align: center;
   color: var(--main-color-blue);
   font-family: var(--main-font);
@@ -681,7 +682,8 @@ header {
   font-weight: bolder;
 }
 
-.project-lead p {
+.project-lead p,
+.team-heading p {
   font-size: 1.3rem;
 }
 
@@ -840,8 +842,14 @@ header {
   background-image: url(../images/prof-pic-4.jpeg);
 }
 
-.about-ite-home p {
+.about-ite-home p,
+.testimony-head h2,
+.per-comment h2 {
   color: var(--main-color-blue);
+  font-family: var(--main-font);
+}
+
+.about-ite-home p {
   padding: 6rem 0 2rem 0;
   text-align: left;
 }
@@ -889,9 +897,14 @@ header {
   position: relative;
 }
 
-.content p {
+.content p,
+.testimony-head p,
+.per-comment p {
   padding: 0;
-  color: #fff; 
+}
+
+.content p {
+  color: #fff;
 }
 
 .content ol {
@@ -906,19 +919,53 @@ header {
 }
 
 /* Testimony Section */
-.per-comment,
-.per-comment-box {
-  display: flex;
+.testimony-head {
+  margin-top: 3rem;
+}
+
+.testimony-head p {
+  padding-top: 2rem;
+  text-align: center;
 }
 
 .per-comment {
-  flex-direction: column;
+  margin-top: 6rem;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.per-comment-box {
+.per-comment h2 {
+  padding-top: 1rem;
+}
 
+.per-comment p {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.per-comment blockquote {
+  background-color: var(--secondary-color);
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0.7rem;
+  margin-top: 0.6rem;
+}
+
+.testi-img-box {
+  width: 10rem;
+  height: 10rem;
+  margin: 0 auto;;
+}
+
+.arrow-guide {
+  margin-top: 3rem;
+}
+
+.arrow-guide a {
+  color: var(--main-color-blue);
+  font-size: 1.5rem;
+  padding: 2rem;
 }
 
 
