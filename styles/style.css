@@ -20,9 +20,14 @@
   --main-font: 'Nunito', sans-serif;
   --secondary-font: 'Lato', sans-serif;
   --body-font: 'Inter', sans-serif;
-  --main-font-color-blue: #060863;
-  --secondary-font-color: #c47806;
+  --main-color-blue: #060863;
+  --secondary-color: #c47806;
   --body-font-color: #f8f2f2;
+}
+
+body {
+  z-index: 0;
+  background-color: #f1f1f1;
 }
 
 html {
@@ -41,7 +46,7 @@ a {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .container {
@@ -67,7 +72,7 @@ header {
 }
 
 #comp-name {
-  color: var(--secondary-font-color);
+  color: var(--secondary-color);
   font-family: var(--main-font);
 }
 
@@ -76,7 +81,7 @@ header {
   align-items: center;
   justify-content: center;
   height: 5.2rem;
-  background-color: var(--main-font-color-blue);
+  background-color: var(--main-color-blue);
 }
 
 .menu-toggle {
@@ -101,7 +106,7 @@ header {
   left: 0;
   width: 80%;
   height: 100vh;
-  background-color: var(--main-font-color-blue);
+  background-color: var(--main-color-blue);
   padding: 4rem;
   display: flex;
   flex-direction: column;
@@ -118,7 +123,7 @@ header {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: var(--secondary-font-color);
+  background-color: var(--secondary-color);
   z-index: 1200;
   opacity: 0;
   transform: scale(0);
@@ -157,7 +162,7 @@ header {
 }
 
 .nav-link:hover {
-  color: var(--secondary-font-color);
+  color: var(--secondary-color);
 }
 
 /* Slide show */
@@ -276,6 +281,7 @@ header {
   -ms-animation-delay: 18s;
   animation-delay: 18s; 
 }
+
 .cb-slideshow li:nth-child(5) div { 
   -webkit-animation-delay: 24s;
   -moz-animation-delay: 24s;
@@ -473,13 +479,12 @@ header {
   position: relative;
   width: 100%;
   padding: 0 2rem;
-  background-color: #f8f2f2;
 }
 
 .tab-box {
   position: relative;
   background: #fff;
-  bottom: 5.2rem;
+  top: 5.2rem;
 }
 
 /* Style the tab */
@@ -494,7 +499,7 @@ header {
 /* Style the buttons inside the tab */
 .tab button {
   background-color: inherit;
-  color: var(--main-font-color-blue);
+  color: var(--main-color-blue);
   border: none;
   outline: none;
   cursor: pointer;
@@ -510,7 +515,7 @@ header {
 }
 
 .tab i {
-  padding: 0.6rem;
+  padding: 0.4rem;
   color: #000;
 }
 
@@ -521,7 +526,7 @@ header {
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: var(--secondary-font-color);
+  background-color: var(--secondary-color);
 }
 
 /* Style the tab content */
@@ -543,6 +548,7 @@ header {
   height: 20rem;
   margin: 0 auto;
   padding-top: 1rem;
+  color: var(--main-color-blue);
 }
 
 .tab-text p {
@@ -586,6 +592,7 @@ header {
   display: flex;
   flex-direction: column;
 }
+
 .per-service {
   width: 25rem;
   height: 15rem;
@@ -601,12 +608,16 @@ header {
 .services h2,
 .services-box h4 {
   font-family: var(--main-font);
-  color: var(--main-font-color-blue);
+  color: var(--main-color-blue);
   text-align: center;
 }
 
 .services h2 {
-  margin-bottom: 2rem;
+  padding: 3rem;
+}
+
+.services {
+  top: 5.2rem;
 }
 
 .services-box h4 {
@@ -628,6 +639,7 @@ header {
   url(../images/counter-bgrnd.jpg);
   width: 100%;
   background-size: cover;
+  top: 5.2rem;
 }
 
 .img-holder {
@@ -660,13 +672,17 @@ header {
 /* Our Projects */
 .project-lead {
   text-align: center;
+  color: var(--main-color-blue);
+  font-family: var(--main-font);
 }
 
 .project-lead h2 {
-  color: var(--main-font-color-blue);
-  font-family: var(--secondary-font);
-  padding-top: 4rem;
-  font-weight: bold;
+  padding-top: 3rem;
+  font-weight: bolder;
+}
+
+.project-lead p {
+  font-size: 1.3rem;
 }
 
 .project-img {
@@ -698,8 +714,11 @@ header {
   justify-content: center;
 }
 
-.project-box {
+.project-box,
+.our-team-box {
   padding: 1.5rem;
+  position: relative;
+  top: 5.2rem;
 }
 
 .per-project {
@@ -721,7 +740,7 @@ header {
   font-size: 1.5rem;
   padding: 1rem;
   font-weight: bold;
-  background-color: var(--main-font-color-blue);
+  background-color: var(--main-color-blue);
 }
 
 /* Our Team */
@@ -734,6 +753,10 @@ header {
 	text-align: center;
   height: 40rem;
   width: 100%;
+}
+
+.team-heading {
+  margin-top: 3rem;
 }
 
 .our-team-box h1 {
@@ -750,7 +773,7 @@ header {
   width: 90%;
   margin: 0 auto;
   position: relative;
-  top: 10rem;
+  top: 5.4rem;
 }
 
 .team-pictures {
@@ -762,8 +785,11 @@ header {
   width: 10rem;
   height: 10rem;
   display: flex;
+  flex-direction: column;
+  position: relative;
   justify-content: center;
   align-items: center;
+  top: 4rem;
 }
 
 .per-position {
@@ -772,10 +798,6 @@ header {
   width: 100%;
   height: 100%;
   padding-top: 3.4rem;
-}
-
-.per-position h4 {
-  padding-top: 0.4rem;
 }
 
 #team-pic-1,
@@ -791,17 +813,17 @@ header {
 #per-pos-3:hover,
 #per-pos-4:hover {
   color: #fff;
-  transition: .15s ease;
+  transition: .10s ease;
 }
 
 #team-pic-1:hover,
 #team-pic-2:hover,
 #team-pic-3:hover,
 #team-pic-4:hover {
-  background: var(--secondary-font-color);
+  background: var(--secondary-color);
   transition: .5s ease;
 }
-
+ 
 #team-pic-1 {
   background-image: url(../images/prof-pic-1.jpeg);
 }
@@ -817,6 +839,88 @@ header {
 #team-pic-4 {
   background-image: url(../images/prof-pic-4.jpeg);
 }
+
+.about-ite-home p {
+  color: var(--main-color-blue);
+  padding: 6rem 0 2rem 0;
+  text-align: left;
+}
+
+.project-box,
+.our-team-box {
+  background-color: #f8f2f2;
+}
+
+.collapsible {
+  background-color: var(--main-color-blue);
+  color: var(--secondary-color);
+  cursor: pointer;
+  padding: 1.4rem 0 0 1rem;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.active, .collapsible:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+#btn-action0,
+#btn-action1,
+#btn-action2 {
+  color: #ddd;
+  font-size: 2rem;
+  float: right;
+  padding-right: 0.5rem;
+  position: relative;
+  bottom: 0.6rem;
+}
+
+.content {
+  padding: 1.5rem;
+  display: none;
+  overflow: hidden;
+  background-color:var(--main-color-blue);
+  font-family: var(--main-font);
+  position: relative;
+}
+
+.content p {
+  padding: 0;
+  color: #fff; 
+}
+
+.content ol {
+  padding: 1.5rem;
+  text-align: left;
+  color: #fff;
+  font-size: 1rem;
+}
+
+ .content h2 {
+  color: #fff;
+}
+
+/* Testimony Section */
+.per-comment,
+.per-comment-box {
+  display: flex;
+}
+
+.per-comment {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.per-comment-box {
+
+}
+
 
 
 /* @media screen and (max-width: 1140px) { 

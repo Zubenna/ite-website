@@ -46,7 +46,6 @@ function openCity(evt, tabId) {
 }
 
 // Implement Counter
-
 const counters = document.querySelectorAll(".counter");
 const speed = 800;
 
@@ -61,9 +60,55 @@ counters.forEach(count => {
     setTimeout(updateCounter, 1)
   } else {
     count.innerText = ourTarget;
-    console.log(count.innerText);
   }
-  
   }
 updateCounter();
 });
+
+// Collapsible button
+let coll = document.getElementsByClassName("collapsible");
+let i;
+for (i = 0; i < coll.length; i++) {
+  let btnAction = document.getElementById(`btn-action${i}`);
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let divContent = this.nextElementSibling;
+    if (divContent.style.display === "block") {
+      divContent.style.display = "none";
+      btnAction.innerHTML = '+';
+    } else {
+      divContent.style.display = "block";
+      btnAction.innerHTML = '-';
+    }
+  });
+}
+
+
+// Testimony Slide
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
