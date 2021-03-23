@@ -22,7 +22,6 @@
   --body-font: 'Inter', sans-serif;
   --main-color-blue: #060863;
   --secondary-color: #c47806;
-  --body-font-color: #f8f2f2;
 }
 
 body {
@@ -31,8 +30,6 @@ body {
 }
 
 html {
-  font-family: var(--body-font);
-  font-size: 1rem;
   scroll-behavior: smooth;
 }
 
@@ -46,7 +43,7 @@ a {
 }
 
 p {
-  font-size: 1rem;
+  padding: 0;
 }
 
 .container {
@@ -85,7 +82,7 @@ header {
 }
 
 .menu-toggle {
-  color: var(--body-font-color);
+  color: #f8f2f2;
   font-size: 2.2rem;
   position: absolute;
   top: 20%;
@@ -97,6 +94,7 @@ header {
 
 .fa-times {
   display: none;
+  /* color: #fff; */
 }
 
 .nav-list {
@@ -166,7 +164,6 @@ header {
 }
 
 /* Slide show */
-
 .cb-slideshow,
 .cb-slideshow:after { 
   position: relative;
@@ -649,10 +646,11 @@ header {
 
 .counter {
   padding: 0.7rem 0;
-  font-size: 1.4rem;
+  font-size: 4rem;
   color: #fff;
   font-family: var(--body-font-color);
 }
+
 .per-counter h4 {
   padding: 0;
   color: #ccc;
@@ -674,7 +672,7 @@ header {
 .team-heading p {
   text-align: center;
   color: var(--main-color-blue);
-  font-family: var(--secondary-font);
+  font-family: var(--body-font-color);
 }
 
 .project-lead h2 {
@@ -761,14 +759,14 @@ header {
   padding: 1.5rem;
 }
 
-.our-team-box h1 {
+.team-heading h1 {
   margin-bottom: 1rem;
   color: #fff;
 }
 
-.our-team-box p {
- color: #f2f2f2;
- font-weight: bold;
+.team-heading p {
+  color: #ccc;
+  font-weight: bold;
 }
 
 .sub-team-box {
@@ -842,16 +840,17 @@ header {
   background-image: url(../images/prof-pic-4.jpeg);
 }
 
-.about-ite-home p,
 .testimony-head h2,
 .per-comment h2 {
   color: var(--main-color-blue);
-  font-weight: normal;
 }
 
-.about-ite-home p {
+.ite-intro {
   padding: 6rem 0 2rem 0;
   text-align: left;
+  color: var(--main-color-blue);
+  line-height: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .project-box {
@@ -896,24 +895,17 @@ header {
   display: none;
   overflow: hidden;
   color: var(--main-color-blue);
+  text-align: left;
   background-color: #fff;
-  font-family: var(--secondary-font);
   position: relative;
   border: 1px solid var(--main-color-blue);
   border-radius: 10px;
   margin-bottom: 1rem;
+  font-size: 1.2rem;
 }
 
-.content p,
-.testimony-head p,
-.per-comment p {
-  padding: 0;
-}
-
-.content p {
-  letter-spacing: 0.5px;
-  margin-left: -0.5px;
-  line-height: 1rem;
+.content h2 {
+  text-align: center;
 }
 
 .content ol {
@@ -929,13 +921,15 @@ header {
   padding: 1.5rem;
 }
 
-.testimony-head p {
+.testimony-head p,
+.per-comment p {
   padding-top: 2rem;
   text-align: center;
+  font-size: 1.2rem;
+  color: var(--main-color-blue);
 }
 
 .per-comment {
-  /* margin-top: 6rem; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -947,16 +941,13 @@ header {
   padding-top: 1rem;
 }
 
-.per-comment p {
-  text-align: center;
-  padding-top: 1rem;
-}
-
 .per-comment blockquote {
   color: #fff;
   font-size: 1.2rem;
   padding: 0.7rem;
   margin-top: 0.6rem;
+  font-weight: bold;
+  background: var(--secondary-color);
 }
 
 .testi-img-box {
@@ -1011,7 +1002,6 @@ header {
 /* News Letter */
 
 .news-letter {
-  background: #fff;
   margin-top: 10rem;
   padding: 2rem 1.5rem;
   color: var(--main-color-blue);
@@ -1020,17 +1010,16 @@ header {
 
 .news-letter p {
   color: var(--main-color-blue);
-  font-family: var(--secondary-font);
+  font-size: 1.2rem;
   padding: 2rem 0;
-  font-weight: normal;
 }
 
 .news-letter input,
 .news-letter button {
   height: 2.5rem;
+  font-family: var(--main-font);
+  font-size: 1.1rem;
   padding: 0.4rem;
-  font-family: var(--secondary-font);
-  font-size: 1rem;
 }
 
 .news-letter button {
@@ -1040,6 +1029,7 @@ header {
   outline: none;
   border: none;
   cursor: pointer;
+  font-weight: bold;
 }
 
 
