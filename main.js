@@ -79,11 +79,6 @@ for (i = 0; i < coll.length; i++) {
     } else {
       divContent.style.display = "block";
       btnAction.innerHTML = '-';
-      //  for (let j = 0; j < coll.length; j++) {
-      //    if(j !== i) {
-      //     divContent.style.display = "none"; 
-      //    }
-      //  }
     }
   });
 }
