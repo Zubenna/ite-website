@@ -833,9 +833,10 @@ header {
 }
 
 /* footer Section */
-.addres-box {
+.addres-box,
+.more-info,
+.footer-more-info {
   width: 100%;
-  background: rgb(49, 48, 48);
   font-family: var(--body-font);
   color: #f1f1f1;
   display: flex;
@@ -844,6 +845,10 @@ header {
   align-items: center;
   font-size: 1.1rem;
   padding-top: 2rem;
+}
+
+.addres-box {
+  background: rgb(49, 48, 48);
 }
 
 .addres-info {
@@ -861,5 +866,83 @@ header {
 .fa-globe,
 .fa-phone {
   margin-top: 2rem;
+}
+
+.more-info {
+  background: rgb(71, 70, 70);
+  padding: 2rem;
+}
+
+.more-info h4 {
+  padding-bottom: 1.5rem;
+  color: var(--secondary-color);
+}
+
+.social-media-footer {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.social-media-footer i {
+  color: var(--secondary-color);
+  padding: 0.3rem;
+  font-size: 2rem;
+}
+
+.footer-more-info ul {
+  list-style: none;
+  text-align: left;
+}
+
+.footer-more-info a {
+  color: #f2f2f2;
+}
+
+.footer-more-info span,
+.footer-more-info a {
+  padding: 0.5rem;
+}
+
+.footer-more-info a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+.group-2-contact {
+  text-align: left;
+  margin: 2rem 0;
+}
+
+.contact-2 {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-2 i {
+  padding: 0.8rem;
+  color: var(--secondary-color);
+}
+
+.footer-bar {
+  height: 3rem;
+  background: var(--secondary-color);
+  color: #f1f1f1;
+  text-align: center;
+  width: 100%;
+  padding-top: 1rem;
+  /* display: flex; */
+}
+
+.footer-bar a {
+  position: fixed;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  width: 3rem;
+  height: 3rem;
+  background: var(--secondary-color);
+  color: #f1f1f1;
+  font-size: 2rem;
+  padding: 0.4rem;
 }
 
