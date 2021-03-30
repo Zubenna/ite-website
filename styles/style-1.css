@@ -31,6 +31,8 @@ body {
 
 html {
   scroll-behavior: smooth;
+  max-width: 123rem;
+  margin: 0 auto;
 }
 
 img {
@@ -48,7 +50,6 @@ p {
 
 .container {
   width: 100%;
-  max-width: 123rem;
   margin: 0 auto;
 }
 
@@ -71,6 +72,7 @@ header {
 #comp-name {
   color: var(--secondary-color);
   font-family: var(--main-font);
+  font-size: 4.2vw;
 }
 
 .nav {
@@ -101,7 +103,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 80%;
+  width: 60%;
   height: 100vh;
   background-color: var(--main-color-blue);
   padding: 4rem;
@@ -164,7 +166,8 @@ header {
 
 /* Slide show */
 .cb-slideshow,
-.cb-slideshow:after { 
+.cb-slideshow:after,
+.about-home { 
   position: relative;
   width: 100%;
   height: 40rem;
@@ -210,8 +213,8 @@ header {
 
 .cb-slideshow li div h3 { 
   font-family: var(--secondary-font);
-  font-size: 3rem;
-  padding: 0;
+  font-size: 2.2rem;
+  padding: 2rem;
 }
 
 .cb-slideshow li:nth-child(1) span { 
@@ -286,14 +289,12 @@ header {
   animation-delay: 24s; 
 }
 
-
 /* Core area tabs */
 .core-area,
 .services,
 .counter-holder {
   position: relative;
   width: 100%;
-  padding: 0 2rem;
 }
 
 .tab-box {
@@ -302,7 +303,6 @@ header {
   top: 5.2rem;
 }
 
-/* Style the tab */
 .tab {
   overflow: hidden;
   border: 1px solid #ccc;
@@ -311,16 +311,15 @@ header {
   justify-content: space-between;
 }
 
-/* Style the buttons inside the tab */
 .tab button {
   background-color: inherit;
   color: var(--main-color-blue);
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 0.9rem 1rem;
+  padding: 0.8rem 0.8rem;
   transition: 0.3s;
-  font-size: 1rem;
+  font-size: 0.9rem;
   width: 100%;
   height: 5.2rem;
 }
@@ -334,20 +333,18 @@ header {
   color: #000;
 }
 
-/* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+  background: #ddd;
 }
 
-/* Create an active/current tablink class */
 .tab button.active {
   background-color: var(--secondary-color);
+  color: #f2f2f2;
 }
 
-/* Style the tab content */
 .tabcontent {
   display: none;
-  padding-top: 2rem;
+  padding-top: 1rem;
   border: 1px solid #ccc;
   border-top: none;
 }
@@ -359,10 +356,10 @@ header {
 }
 
 .tab-text {
-  width: 20rem;
-  height: 20rem;
+  width: 18rem;
+  height: 21rem;
   margin: 0 auto;
-  padding-top: 1rem;
+  padding: 1rem;
   color: var(--main-color-blue);
 }
 
@@ -375,18 +372,15 @@ header {
   width: 100%;
   height: 100%;
   background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: none;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #tab-img1,
 #tab-img2,
 #tab-img3 {
-  /* /* height: 25rem;  */
-  /* width: 30rem; */
-  /* margin-left: 1rem; */
   height: 15rem;
-  width: 20rem;
+  width: 16rem;
   margin: 0 auto;
 }
 
@@ -409,14 +403,12 @@ header {
 }
 
 .per-service {
-  width: 25rem;
+  width: 80%;
   height: 15rem;
   margin: 0 auto 2rem auto;
   background: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   border-radius: 8px;
 }
 
@@ -440,8 +432,9 @@ header {
 }
 
 .service-img-box {
-  width: 7rem;
-  height: 7rem;
+  width: 6rem;
+  height: 6rem;
+  margin: 1.3rem auto 0 auto;
 }
 
 .service-img-box img {
@@ -504,7 +497,7 @@ header {
 }
 
 .project-img {
-  width: 28rem;
+  width: 20rem;
   max-width: 100%;
   opacity: 0.7;
 }
@@ -512,8 +505,7 @@ header {
 .project-img:hover {
   transition: .5s ease;
   opacity: 1;
-  max-width: 100%;
-  width: 30rem;
+  width: 21rem;
 }
 
 .project-lead p {
@@ -540,11 +532,8 @@ header {
 }
 
 .per-project {
-  margin-bottom: 2rem;
-}
-
-#project-one {
-  background-size: cover;
+  margin-bottom: 1rem;
+  padding: 0 2rem;
 }
 
 .project-name {
@@ -588,7 +577,7 @@ header {
 }
 
 .sub-team-box {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   position: relative;
   top: 5.4rem;
@@ -597,33 +586,36 @@ header {
 .team-pictures {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 0.1rem;
+  margin: 10% auto 0 auto;
+  width: 80%;
+}
+
+.per-position,
+.prof-pic {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  margin: 0 auto;
 }
 
 .per-picture {
-  width: 10rem;
-  height: 10rem;
-  display: flex;
-  flex-direction: column;
   position: relative;
-  justify-content: center;
-  align-items: center;
-  top: 4rem;
 }
 
 .per-position {
-  font-family: var(--main-font);
+  position: absolute;
+  padding: 35% 0.3rem 0 0.3rem;
   color: transparent;
-  width: 100%;
-  height: 100%;
-  padding-top: 3.4rem;
+  font-family: var(--main-font);
 }
 
-#team-pic-1,
-#team-pic-2,
-#team-pic-3,
-#team-pic-4 {
-  width: 100%;
-  background-size: cover;
+.per-position h3 {
+  font-size: 0.9rem;
+}
+
+.per-position h4 {
+  font-size: 0.7rem;
 }
 
 #per-pos-1:hover,
@@ -632,30 +624,7 @@ header {
 #per-pos-4:hover {
   color: #fff;
   transition: .10s ease;
-}
-
-#team-pic-1:hover,
-#team-pic-2:hover,
-#team-pic-3:hover,
-#team-pic-4:hover {
   background: var(--secondary-color);
-  transition: .5s ease;
-}
- 
-#team-pic-1 {
-  background-image: url(../images/prof-pic-1.jpeg);
-}
-
-#team-pic-2 {
-  background-image: url(../images/prof-pic-2.png);
-}
-
-#team-pic-3 {
-  background-image: url(../images/prof-pic-3.png);
-}
-
-#team-pic-4 {
-  background-image: url(../images/prof-pic-4.jpeg);
 }
 
 .testimony-head h2,
@@ -664,7 +633,7 @@ header {
 }
 
 .ite-intro {
-  padding: 6rem 0 2rem 0;
+  padding: 2rem;
   text-align: left;
   color: var(--main-color-blue);
   line-height: 1.5rem;
@@ -690,9 +659,12 @@ header {
 
 .collapse-button {
   position: relative;
+  padding: 2rem;
 }
 
-.active, .collapsible:hover {
+#btnc-1:hover,
+#btnc-2:hover,
+#btnc-3:hover {
   background-color: var(--secondary-color);
   color: #fff;
 }
@@ -737,6 +709,7 @@ header {
   margin-top: 3rem;
   background-color: #fff;
   padding: 1.5rem;
+  color: var(--main-color-blue);
 }
 
 .testimony-head p,
@@ -755,8 +728,9 @@ header {
   padding: 1.5rem;
 }
 
-.per-comment h2 {
+.per-comment h3 {
   padding-top: 1rem;
+  color: var(--main-color-blue);
 }
 
 .per-comment blockquote {
@@ -841,9 +815,6 @@ header {
   color: #f1f1f1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.1rem;
   padding-top: 2rem;
 }
 
@@ -852,9 +823,18 @@ header {
 }
 
 .addres-info {
-  width: 60%;
+  width: 70%;
   padding: 1rem;
   height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  margin: 0 auto;
+}
+
+.addres-info address {
+  font-size: 0.9rem;
 }
 
 .addres-info .fas {
@@ -889,7 +869,8 @@ header {
   font-size: 2rem;
 }
 
-.footer-more-info ul {
+.footer-more-info ul,
+.footer-more-info h4 {
   list-style: none;
   text-align: left;
 }
@@ -917,32 +898,182 @@ header {
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
+  font-size: 0.75rem;
 }
 
 .contact-2 i {
-  padding: 0.8rem;
+  padding: 0.4rem;
   color: var(--secondary-color);
 }
 
 .footer-bar {
-  height: 3rem;
+  height: 5rem;
   background: var(--secondary-color);
   color: #f1f1f1;
   text-align: center;
   width: 100%;
-  padding-top: 1rem;
-  /* display: flex; */
+  padding-top: 2rem;
+  position: inherit;
 }
 
-.footer-bar a {
+.go-up a {
   position: fixed;
-  bottom: 0.5rem;
-  right: 0.5rem;
-  width: 3rem;
-  height: 3rem;
+  bottom: 2rem;
+  right: 18%;
+  width: 2.5rem;
   background: var(--secondary-color);
   color: #f1f1f1;
   font-size: 2rem;
   padding: 0.4rem;
 }
 
+/* About Page */
+
+.about-home {
+  position: relative;
+  width: 100%;
+  height: 37rem;
+  top: 5.2rem;
+  left: 0;
+  z-index: 0;
+  background-image: url(../images/abt-background.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about-home div {
+  z-index: 1000;
+  position: absolute;
+  bottom: 14rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #f8f2f2;
+  font-family: var(--secondary-font);
+  padding: 2rem;
+  animation: pageTitleAnimation 4s ease-out;
+}
+
+.page-title h1 {
+  font-size: 2.2rem;
+}
+
+.page-title h3 {
+  padding: 2rem 0;
+  font-size: 1.6rem;
+}
+
+.ab-news-letter {
+  text-align: center;
+}
+
+.abt-ite-page {
+  margin-top: 5rem;
+}
+
+.abt-ite-page h1,
+#abt-team-head h1,
+#abt-core-value h1 {
+  text-align: center;
+  font-family: var(--main-font);
+  color: var(--main-color-blue);
+}
+
+.scrolled.slide-left {
+  animation: slide-in-left 2s ease-in-out both;
+}
+
+.scrolled.slide-up {
+  animation: pageTitleAnimation 2s ease-in-out both;
+}
+
+.abt-ite-page h1,
+#abt-core-value h1 {
+  padding: 3rem 1rem 1rem 0;
+}
+
+#abt-team-head p,
+#abt-core-value p {
+  font-family: var(--main-font);
+  color: var(--main-color-blue);
+  font-weight: normal;
+  font-size: 1.1rem;
+}
+
+#abt-team-pic,
+.core-value-box {
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+
+.abt-per-pos {
+  text-align: center;
+  padding-top: 8.5rem;
+}
+
+.abt-per-pos h3 {
+  font-size: 1.5rem;
+}
+
+.abt-per-pos h4 {
+  font-size: 1.2rem;
+}
+
+.abt-core-value {
+  padding: 2rem;
+}
+
+.core-value-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.per-core-value {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#abt-core-value p {
+  padding: 2rem 0;
+}
+
+.per-core-value {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.per-core-value .fas {
+  font-size: 3rem;
+  color: var(--secondary-color);
+}
+
+.per-core-value h3 {
+  font-family: var(--main-font);
+  color: var(--main-color-blue);
+  padding-top: 0.5rem;
+}
+
+.ab-news-letter {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* Projects Page */
+.proj-sub-box {
+  height: 20rem;
+}
+
+.proj-footer-box {
+  margin-top: 10rem;
+}
+
+/* Services Page */
+
+.serv-page-img {
+  
+}
