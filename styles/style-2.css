@@ -231,8 +231,20 @@
   }
 
   100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
@@ -292,6 +304,33 @@
 
   .project-img:hover {
     width: 31rem;
+  }
+
+  /* Services Page */
+  .serv-page-box {
+    display: flex;
+    padding: 1rem;
+  }
+
+  .serv-page-img {
+    margin-left: 27rem;
+    padding-top: 1.2rem;
+  }
+
+  .serv-page-box ul {
+    position: relative;
+    bottom: 3rem;
+    font-size: 1.3rem;
+    text-align: right;
+    width: 73%;
+  }
+
+  .serv-page-box ul li span {
+    display: inline-block;
+  }
+
+  .page-service  h4 {
+    font-size: 1.6rem;
   }
 }
 
@@ -598,5 +637,38 @@
 
   .core-value-box {
     flex-direction: row;
+  }
+
+  /* Services Page */
+  .page-service {
+    margin-top: 2rem;
+  }
+
+  .services-page-holder {
+    display: flex;
+  }
+
+  .serv-page-box {
+    background: lightblue;
+    width: 80%;
+  }
+
+  .serv-page-img {
+    width: 10%;
+    margin-left: 4rem;
+    padding-top: 2rem;
+  }
+
+  .serv-page-box ul {
+    font-size: 1.4rem;
+    width: 80%;
+  }
+
+  .serv-page-box ul li span {
+   padding: 0.3rem;
+  }
+
+  .page-service h4 {
+    font-size: 2rem;
   }
 }
