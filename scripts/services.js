@@ -1,3 +1,15 @@
+// Toggle menu button on mobile
+const selectElement = element => {
+  return document.querySelector(element);
+};
+
+let menuToggler = selectElement('.menu-toggle');
+let body = selectElement('body');
+
+menuToggler.addEventListener('click', () => {
+  body.classList.toggle('open');
+});
+
 // Implement Tab display
 let $tab1 = document.querySelector('#tab1');
 let $tab2 = document.querySelector('#tab2');

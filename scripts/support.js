@@ -1,3 +1,15 @@
+// Toggle menu button on mobile
+const selectElement = element => {
+  return document.querySelector(element);
+};
+
+let menuToggler = selectElement('.menu-toggle');
+let body = selectElement('body');
+
+menuToggler.addEventListener('click', () => {
+  body.classList.toggle('open');
+});
+
 // Collapsible button
 let coll = document.getElementsByClassName("collapsible");
 let i;

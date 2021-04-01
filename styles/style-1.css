@@ -919,7 +919,7 @@ header {
 .go-up a {
   position: fixed;
   bottom: 2rem;
-  right: 18%;
+  right: 15%;
   width: 2.5rem;
   background: var(--secondary-color);
   color: #f1f1f1;
@@ -939,13 +939,11 @@ header {
   animation: slide-in-right 2s ease-in-out both;
 }
 
-
 /* About Page */
-
 .about-home {
   position: relative;
   width: 100%;
-  height: 37rem;
+  height: 40rem;
   top: 5.2rem;
   left: 0;
   z-index: 0;
@@ -1068,19 +1066,6 @@ header {
   padding-top: 0;
 }
 
-/* .scrolled.slide-left {
-  animation: slide-in-left 2s ease-in-out both;
-}
-
-.scrolled.slide-up {
-  animation: pageTitleAnimation 2s ease-in-out both;
-}
-
-.scrolled.slide-right {
-  animation: slide-in-right 2s ease-in-out both;
-}
- */
-
 /* Projects Page */
 .proj-sub-box {
   height: 20rem;
@@ -1090,6 +1075,33 @@ header {
   margin-top: 10rem;
 }
 
+.clients {
+  text-align: center;
+  position: relative;
+  top: 8rem;
+}
+
+.clients h2,
+.clients p,
+.contact-box h2 {
+  font-family: var(--main-font);
+  color: var(--main-color-blue);
+}
+
+.clients p {
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+}
+
+.client-logo-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.per-logo {
+  width: 50%;
+  margin: 0 auto 2rem auto;
+}
 /* Services Page */
 .serv-page-img {
   width: 18%;
@@ -1137,15 +1149,93 @@ header {
   text-align: center;
 }
 
-/* .scrolled.slide-left {
-  animation: slide-in-left 2s ease-in-out both;
+/* Contact Page */
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
 }
 
-.scrolled.slide-up {
-  animation: pageTitleAnimation 2s ease-in-out both;
+#contact-us {
+  position: relative;
+  top: 10rem;
 }
 
-.scrolled.slide-right {
-  animation: slide-in-right 2s ease-in-out both;
-} */
+#contact-us #c-info {
+  margin-left: 1rem;
+  font-size: 1.1rem;
+  color: var(--main-color-blue);
+  padding-bottom: 1rem;
+}
 
+.per-contact {
+  width: 100%;
+  display: flex;
+  height: 8rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background: #fff;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  color: var(--main-color-blue);
+  font-size: 1rem;
+}
+
+.per-contact .fas {
+  padding-right: 0.5rem;
+  color: var(--secondary-color);
+  font-size: 1rem;
+}
+
+.contact-footer {
+  top: 10rem;
+  position: relative;
+}
+
+.form-box {
+  position: relative;
+  top: 10rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.form-box h2 {
+  margin-bottom: 2rem;
+  color: var(--main-color-blue);
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.6rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+}
+
+.contact-form input {
+  height: 3rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form textarea {
+  min-height: 10rem;
+}
+
+.name-field,
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form button {
+  margin: 2rem 0 4rem 0;
+  width: 50%;
+  height: 3rem;
+  padding: 0.4rem;
+  font-size: 1rem;
+  color: #fff;
+  outline: none;
+  border: none;
+  background: var(--secondary-color);
+}
