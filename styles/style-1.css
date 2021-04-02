@@ -1,13 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap");
 /* font-family: 'Akaya Telivigala', cursive; */
-@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Lato:wght@100&display=swap");
-/* font-family: 'Lato', sans-serif; */
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
-/* font-family: 'Nunito', sans-serif */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Nunito:wght@300&display=swap");
-/* font-family: 'Inter', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap");
 
-/*Global styles*/
+/* font-family: 'Lato', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Lato:wght@100&display=swap");
+
+/* font-family: 'Nunito', sans-serif */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+
+/* font-family: 'Inter', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Nunito:wght@300&display=swap");
+
+/* Global styles */
 *,
 *::before,
 *::after {
@@ -59,6 +62,7 @@ header {
   top: 0;
   left: 0;
   z-index: 1;
+
   /* background: linear-gradient(to bottom, rgba(0,0,0,.5), transparent); */
 }
 
@@ -88,7 +92,11 @@ header {
   font-size: 2.2rem;
   position: absolute;
   top: 20%;
-  transform: translateY(-50);
+
+  /* transform: translateY(-50); */
+
+  /* transform: rotate(-50); */
+
   right: 1rem;
   cursor: pointer;
   z-index: 1600;
@@ -157,7 +165,7 @@ header {
   font-size: 1.3rem;
   letter-spacing: 2px;
   margin-right: -2px;
-  transition: color.5s;
+  transition: color0.5s;
 }
 
 .nav-link:hover {
@@ -166,7 +174,7 @@ header {
 
 /* Slide show */
 .cb-slideshow,
-.cb-slideshow:after,
+.cb-slideshow::after,
 .about-home {
   position: relative;
   width: 100%;
@@ -185,13 +193,13 @@ header {
   color: transparent;
   background-size: cover;
   background-position: 50% 50%;
-  background-repeat: none;
+  background-repeat: no-repeat;
   opacity: 0;
   z-index: 0;
-  -webkit-animation: imageAnimation 30s linear infinite 0s;
-  -moz-animation: imageAnimation 30s linear infinite 0s;
-  -o-animation: imageAnimation 30s linear infinite 0s;
-  -ms-animation: imageAnimation 30s linear infinite 0s;
+  -webkit-animation: imageanimation 30s linear infinite 0s;
+  -moz-animation: imageanimation 30s linear infinite 0s;
+  -o-animation: imageanimation 30s linear infinite 0s;
+  -ms-animation: imageanimation 30s linear infinite 0s;
   animation: imageAnimation 30s linear infinite 0s;
 }
 
@@ -204,10 +212,10 @@ header {
   text-align: center;
   opacity: 0;
   color: #f8f2f2;
-  -webkit-animation: titleAnimation 30s linear infinite 0s;
-  -moz-animation: titleAnimation 30s linear infinite 0s;
-  -o-animation: titleAnimation 30s linear infinite 0s;
-  -ms-animation: titleAnimation 30s linear infinite 0s;
+  -webkit-animation: titleanimation 30s linear infinite 0s;
+  -moz-animation: titleanimation 30s linear infinite 0s;
+  -o-animation: titleanimation 30s linear infinite 0s;
+  -ms-animation: titleanimation 30s linear infinite 0s;
   animation: titleAnimation 30s linear infinite 0s;
 }
 
@@ -443,7 +451,8 @@ header {
 
 /* Counter */
 .counter-holder {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       to bottom,
       rgba(76, 77, 80, 0.52),
       rgba(107, 36, 89, 0.73)
@@ -556,7 +565,8 @@ header {
 
 /* Our Team */
 .our-team-box {
-  background-image: linear-gradient(to right, #8a7224a2, rgba(70, 70, 8, 0.73)),
+  background-image:
+    linear-gradient(to right, #8a7224a2, rgba(70, 70, 8, 0.73)),
     url(../images/sample-ite-bacgnd.jpg);
   background-position: center;
   background-size: cover;
@@ -753,7 +763,7 @@ header {
 }
 
 .arrow-guide {
-  display: relative;
+  position: relative;
   background: #fff;
   padding: 2rem 1.5rem;
 }
@@ -980,10 +990,6 @@ header {
   font-size: 1.6rem;
 }
 
-.ab-news-letter {
-  text-align: center;
-}
-
 .abt-ite-page {
   margin-top: 5rem;
 }
@@ -1037,11 +1043,6 @@ header {
   flex-direction: column;
 }
 
-.per-core-value {
-  width: 80%;
-  margin: 0 auto;
-}
-
 #abt-core-value p {
   padding: 2rem 0;
 }
@@ -1069,6 +1070,7 @@ header {
 .ab-news-letter {
   margin-top: 0;
   padding-top: 0;
+  text-align: center;
 }
 
 /* Projects Page */
@@ -1107,6 +1109,7 @@ header {
   width: 50%;
   margin: 0 auto 2rem auto;
 }
+
 /* Services Page */
 .serv-page-img {
   width: 18%;
@@ -1117,7 +1120,6 @@ header {
 }
 
 .serv-page-box ul {
-  padding: 0.3rem;
   text-align: left;
   color: var(--main-color-blue);
   padding: 0 0 0.6rem 0.6rem;
