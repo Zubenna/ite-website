@@ -1,227 +1,305 @@
 /* Animation for the slideshow images */
-@-webkit-keyframes imageAnimation { 
-    0% { opacity: 0;
-    -webkit-animation-timing-function: ease-in; }
-    8% { opacity: 1;
-    -webkit-animation-timing-function: ease-out; }
-    17% { opacity: 1 }
-    25% { opacity: 0 }
-    100% { opacity: 0 }
+@-webkit-keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    -webkit-animation-timing-function: ease-in;
   }
-  
-  @-moz-keyframes imageAnimation { 
-    0% { opacity: 0;
-    -moz-animation-timing-function: ease-in; }
-    8% { opacity: 1;
-    -moz-animation-timing-function: ease-out; }
-    17% { opacity: 1 }
-    25% { opacity: 0 }
-    100% { opacity: 0 }
+  8% {
+    opacity: 1;
+    -webkit-animation-timing-function: ease-out;
   }
-  
-  @-o-keyframes imageAnimation { 
-    0% { opacity: 0;
-    -o-animation-timing-function: ease-in; }
-    8% { opacity: 1;
-    -o-animation-timing-function: ease-out; }
-    17% { opacity: 1 }
-    25% { opacity: 0 }
-    100% { opacity: 0 }
+  17% {
+    opacity: 1;
   }
-  
-  @-ms-keyframes imageAnimation { 
-    0% { opacity: 0;
-    -ms-animation-timing-function: ease-in; }
-    8% { opacity: 1;
-    -ms-animation-timing-function: ease-out; }
-    17% { opacity: 1 }
-    25% { opacity: 0 }
-    100% { opacity: 0 }
+  25% {
+    opacity: 0;
   }
-  
-  @keyframes imageAnimation { 
-    0% { opacity: 0;
-    animation-timing-function: ease-in; }
-    8% { opacity: 1;
-    animation-timing-function: ease-out; }
-    17% { opacity: 1 }
-    25% { opacity: 0 }
-    100% { opacity: 0 }
+  100% {
+    opacity: 0;
   }
-  
-  /* Animation for the title */
-  @-webkit-keyframes titleAnimation { 
-    0% {
-        opacity: 0;
-        transform: translateX(200px);
-      }
-  
-      8% {
-        opacity: 1;
-        transform: translateX(0px);
-      }
-  
-      17% {
-        opacity: 1;
-        transform: translateX(0px);
-      }
-  
-      19% {
-        opacity: 0;
-        transform: translateX(-400px);
-      }
-  
-      25% { opacity: 0 }
-      100% { opacity: 0 }
+}
+
+@-moz-keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    -moz-animation-timing-function: ease-in;
   }
-  
-  @-moz-keyframes titleAnimation { 
-    0% {
-        opacity: 0;
-        transform: translateX(200px);
-      }
-  
-      8% {
-        opacity: 1;
-        transform: translateX(0px);
-      }
-  
-      17% {
-        opacity: 1;
-        transform: translateX(0px);
-      }
-  
-      19% {
-        opacity: 0;
-        transform: translateX(-400px);
-      }
-  
-      25% { opacity: 0 }
-      100% { opacity: 0 }
+  8% {
+    opacity: 1;
+    -moz-animation-timing-function: ease-out;
   }
-  
-  @-o-keyframes titleAnimation { 
-    0% {
-        opacity: 0;
-        transform: translateX(200px);
-      }
-  
-      8% {
-        opacity: 1;
-        transform: translateX(0px);
-      }
-  
-      17% {
-        opacity: 1;
-        transform: translateX(0px);
-      }
-  
-      19% {
-        opacity: 0;
-        transform: translateX(-400px);
-      }
-  
-      25% { opacity: 0 }
-      100% { opacity: 0 }
+  17% {
+    opacity: 1;
   }
-  
-  @-ms-keyframes titleAnimation { 
-    0% {
-        opacity: 0;
-        transform: translateX(200px);
-      }
-  
-      8% {
-        opacity: 1;
-        transform: translateX(0px);
-      }
-  
-      17% {
-        opacity: 1;
-        transform: translateX(0px);
-      }
-  
-      19% {
-        opacity: 0;
-        transform: translateX(-400px);
-      }
-  
-      25% { opacity: 0 }
-      100% { opacity: 0 }
+  25% {
+    opacity: 0;
   }
-  
-  @keyframes titleAnimation { 
-    0% {
-        opacity: 0;
-        transform: translateX(200px);
-      }
-    
-      8% {
-        opacity: 1;
-        transform: translateX(0px);
-      }
-  
-      17% {
-        opacity: 1;
-        transform: translateX(0px);
-      }
-  
-      19% {
-        opacity: 0;
-        transform: translateX(-400px);
-      }
-    
-      25% { opacity: 0 }
-      100% { opacity: 0 }
+  100% {
+    opacity: 0;
   }
- 
-  /* Show at least something when animations not supported */
-  .no-cssanimations .cb-slideshow li span{
-      opacity: 1;
+}
+
+@-o-keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    -o-animation-timing-function: ease-in;
+  }
+  8% {
+    opacity: 1;
+    -o-animation-timing-function: ease-out;
+  }
+  17% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    -ms-animation-timing-function: ease-in;
+  }
+  8% {
+    opacity: 1;
+    -ms-animation-timing-function: ease-out;
+  }
+  17% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+  8% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  17% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Animation for the title */
+@-webkit-keyframes titleAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
   }
 
-  /* Animation for testimony */
+  8% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+  17% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+  19% {
+    opacity: 0;
+    transform: translateX(-400px);
+  }
+
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes titleAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+
+  8% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+  17% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+  19% {
+    opacity: 0;
+    transform: translateX(-400px);
+  }
+
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes titleAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+
+  8% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+  17% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+  19% {
+    opacity: 0;
+    transform: translateX(-400px);
+  }
+
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes titleAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+
+  8% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+  17% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+  19% {
+    opacity: 0;
+    transform: translateX(-400px);
+  }
+
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes titleAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+
+  8% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+  17% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+  19% {
+    opacity: 0;
+    transform: translateX(-400px);
+  }
+
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Show at least something when animations not supported */
+.no-cssanimations .cb-slideshow li span {
+  opacity: 1;
+}
+
+/* Animation for testimony */
 .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
   }
-  
-  @-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
+  to {
+    opacity: 1;
   }
-  
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Tile Page Animation */
+@-webkit-keyframes pageTitleAnimation {
+  0% {
+    opacity: 0.5;
+    transform: translateY(100px);
   }
 
-  /* Tile Page Animation */
-  @-webkit-keyframes pageTitleAnimation {
-    0% {
-      opacity: 0.5;
-      transform: translateY(100px);
-    }
-      
-    100% {
-      opacity: 1;
-      transform: translateX(0px);
-    }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes pageTitleAnimation {
+  0% {
+    opacity: 0.4;
+    transform: translateY(100px);
   }
 
-  @keyframes pageTitleAnimation {
-    0% {
-      opacity: 0.4;
-      transform: translateY(100px);
-    }
-
-    100% {
-      opacity: 1;
-      transform: translateX(0px);
-    }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
   }
+}
 
 /* Elements Animation */
 @keyframes slide-in-left {
@@ -248,20 +326,19 @@
   }
 }
 
-
 /* media query */
 
 /* Index page */
-@media screen and (max-width: 1140px) { 
+@media screen and (max-width: 1140px) {
   /* .cb-slideshow li div h3 { font-size: 140px } */
 }
 
-@media screen and (max-width: 600px) { 
+@media screen and (max-width: 600px) {
   /* .cb-slideshow li div h3 { font-size: 80px } */
 }
 
-@media (min-width: 768px) { 
-  .cb-slideshow li div h3 { 
+@media (min-width: 768px) {
+  .cb-slideshow li div h3 {
     font-size: 4rem;
   }
 
@@ -272,8 +349,8 @@
   #tab-img1,
   #tab-img2,
   #tab-img3 {
-  height: 25rem;
-  width: 35rem;
+    height: 25rem;
+    width: 35rem;
   }
 
   .tab-text {
@@ -329,7 +406,7 @@
     display: inline-block;
   }
 
-  .page-service  h4 {
+  .page-service h4 {
     font-size: 1.6rem;
   }
 
@@ -339,18 +416,18 @@
   }
 }
 
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
   .nav-list {
-  margin-bottom: 3rem;
-  width: 50vw;
-  height: 1.2rem;
-  background: transparent;
-  margin-left: 11rem;
-  position: relative;
-  transform: translateX(0);
-  flex-direction: row;
-  justify-content:space-between;
-  top: 0.4rem;
+    margin-bottom: 3rem;
+    width: 50vw;
+    height: 1.2rem;
+    background: transparent;
+    margin-left: 11rem;
+    position: relative;
+    transform: translateX(0);
+    flex-direction: row;
+    justify-content: space-between;
+    top: 0.4rem;
   }
 
   .nav-link {
@@ -597,7 +674,7 @@
     text-align: center;
   }
 
-  #ite-about{
+  #ite-about {
     text-align: left;
     padding: 0 2rem;
   }
@@ -670,7 +747,7 @@
   }
 
   .serv-page-box ul li span {
-   padding: 0.3rem;
+    padding: 0.3rem;
   }
 
   .page-service h4 {
@@ -733,6 +810,6 @@
 
   .contact-form input,
   .contact-form textarea {
-  font-size: 1.2rem;
+    font-size: 1.2rem;
   }
 }
