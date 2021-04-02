@@ -84,6 +84,7 @@ header {
   align-items: center;
   justify-content: center;
   height: 5.2rem;
+  position: fixed;
   background-color: var(--main-color-blue);
 }
 
@@ -418,6 +419,7 @@ header {
   display: flex;
   flex-direction: column;
   border-radius: 8px;
+  border: 2px solid var(--main-color-blue);
 }
 
 .services h2,
@@ -1246,3 +1248,4 @@ header {
   border: none;
   background: var(--secondary-color);
 }
+

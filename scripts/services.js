@@ -111,3 +111,10 @@ const handleScrollAnimation = () => {
 window.addEventListener("scroll", () => { 
   handleScrollAnimation();
 });
+
+// Header style on scroll
+window.addEventListener("scroll", function () {
+  let nav = document.querySelector(".nav");
+  let windowPosition = window.scrollY > 0;
+  nav.classList.toggle("scroll-active", windowPosition);
+});

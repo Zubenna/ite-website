@@ -493,10 +493,26 @@
   .nav {
     flex-direction: row;
     justify-content: flex-start;
+    width: 100%;
+    background-color: transparent;
+  }
+
+  .scroll-active {
+    background-color: var(--main-color-blue); 
+  }
+
+  .core-area {
+    margin-top: 37rem;
+  }
+
+  .cb-slideshow,
+  .about-home {
+    height: 42.2rem;
+    top: 0;
   }
 
   .cb-slideshow {
-    height: 37rem;
+    position: absolute;
   }
 
   .cb-slideshow li div {
