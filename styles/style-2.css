@@ -1,0 +1,925 @@
+/* Animation for the slideshow images */
+@-webkit-keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    -webkit-animation-timing-function: ease-in;
+  }
+
+  8% {
+    opacity: 1;
+    -webkit-animation-timing-function: ease-out;
+  }
+
+  17% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    -moz-animation-timing-function: ease-in;
+  }
+
+  8% {
+    opacity: 1;
+    -moz-animation-timing-function: ease-out;
+  }
+
+  17% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    -o-animation-timing-function: ease-in;
+  }
+
+  8% {
+    opacity: 1;
+    -o-animation-timing-function: ease-out;
+  }
+
+  17% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    -ms-animation-timing-function: ease-in;
+  }
+
+  8% {
+    opacity: 1;
+    -ms-animation-timing-function: ease-out;
+  }
+
+  17% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+
+  8% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+
+  17% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Animation for the title */
+@-webkit-keyframes titleAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  8% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  17% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  19% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes titleAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  8% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  17% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  19% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes titleAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  8% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  17% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  19% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes titleAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  8% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  17% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  19% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes titleAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  8% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  17% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  19% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Show at least something when animations not supported */
+.no-cssanimations .cb-slideshow li span {
+  opacity: 1;
+}
+
+/* Animation for testimony */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Tile Page Animation */
+@-webkit-keyframes pageTitleAnimation {
+  0% {
+    opacity: 0.5;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pageTitleAnimation {
+  0% {
+    opacity: 0.4;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Elements Animation */
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+/* media query */
+
+/* Index page */
+@media (min-width: 576px) {
+  .tab button {
+    font-size: 1rem;
+  }
+
+  #tab-img1,
+  #tab-img2,
+  #tab-img3,
+  #tab-img4 {
+    width: 34rem;
+  }
+
+  .tab-text {
+    width: 25rem;
+    min-height: 13rem;
+  }
+
+  .go-up a {
+    right: 0.4rem;
+  }
+
+  /* About Profile */
+  .about-home {
+    height: 65vh;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .cb-slideshow li div h3 {
+    font-size: 4rem;
+  }
+
+  .tab button {
+    font-size: 1.2rem;
+  }
+
+  #tab-img1,
+  #tab-img2,
+  #tab-img3,
+  #tab-img4 {
+    height: 25rem;
+    width: 35rem;
+  }
+
+  .nav-list {
+    padding: 2rem;
+  }
+
+  .tab-text {
+    width: 35rem;
+    min-height: 28rem;
+    font-size: 1.6rem;
+  }
+
+  .tab-text p {
+    font-size: 1.8rem;
+  }
+
+  .per-service h4 {
+    font-size: 1.6rem;
+  }
+
+  .services h2 {
+    font-size: 3rem;
+  }
+
+  .team-pictures {
+    width: 50%;
+  }
+
+  .project-img {
+    width: 30rem;
+  }
+
+  .project-img:hover {
+    width: 31rem;
+  }
+
+  /* Services Page */
+  .serv-page-box {
+    display: flex;
+    padding: 1rem;
+  }
+
+  .serv-page-img {
+    margin-left: 27rem;
+    padding-top: 1.2rem;
+  }
+
+  .serv-page-box ul {
+    position: relative;
+    bottom: 3rem;
+    font-size: 1.3rem;
+    text-align: right;
+    width: 73%;
+  }
+
+  .serv-page-box ul li span {
+    display: inline-block;
+  }
+
+  .page-service h4 {
+    font-size: 1.6rem;
+  }
+
+  /* Projects Page */
+  .per-logo {
+    width: 65%;
+  }
+}
+
+@media (min-width: 992px) {
+  .about-sub-menu {
+    position: absolute;
+    width: 80%;
+    margin-left: 10%;
+    display: none;
+    top: 5rem;
+    left: 0;
+  }
+
+  .about-box {
+    width: 80%;
+    height: 10rem;
+    background-color: var(--main-color-blue);
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+  }
+
+  .about-box a {
+    color: #fff;
+    font-size: 1.3rem;
+  }
+
+  .active{
+    background-color: var(--main-color-blue);
+    height: 3.7rem;
+  } 
+
+  .nav-link:hover {
+    padding-bottom: 0.2rem;
+    border-bottom: 4px solid var(--main-color-blue);
+  }
+
+  #sub-about a:hover + .about-sub-menu {
+    display: block;
+  }
+
+  .nav-list {
+    margin-bottom: 3rem;
+    width: 100%;
+    height: 1.2rem;
+    background: transparent;
+    position: relative;
+    transform: translateX(0);
+    flex-direction: row;
+    justify-content: space-between;
+    top: 0.4rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    letter-spacing: normal;
+    transition: color 0.5s;
+    font-family: var(--main-font);
+    text-shadow: none;
+    font-weight: bold;
+  }
+
+  .nav-item {
+    display: inline-block;
+    padding: 0.4rem;
+    font-family: var(--main-font);
+    border: none;
+  }
+
+  .logo-box {
+    width: 4rem;
+    height: 4rem;
+    left: 3rem;
+    top: 1.1rem;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  #comp-name {
+    font-size: 1.2rem;
+    margin-left: 7.5rem;
+    width: 100%;
+  }
+
+  .nav {
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    background-color: transparent;
+  }
+
+  .scroll-active {
+    background-color: var(--header-scroll);
+  }
+
+  .show-sub-menu {
+    display: block;
+  }
+
+  .hide-sub-menu {
+    display: none;
+  }
+
+  .core-area {
+    margin-top: 37rem;
+  }
+
+  .cb-slideshow,
+  .about-home {
+    height: 42.2rem;
+    top: 0;
+  }
+
+  .cb-slideshow {
+    position: absolute;
+  }
+
+  .cb-slideshow li div {
+    bottom: 15rem;
+  }
+
+  .tab-box {
+    top: 0;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .tab-container,
+  .per-project-box,
+  .services-box,
+  .addres-box {
+    display: grid;
+  }
+
+  .tab-container,
+  .per-project-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tab-container {
+    padding: 1.5rem;
+  }
+
+  #tab-img1,
+  #tab-img2,
+  #tab-img3,
+  #tab-img4 {
+    width: 100%;
+    height: 100%;
+  }
+
+  .tab-text {
+    padding-left: 1.5rem;
+  }
+
+  .tab-text p {
+    font-size: 1.5rem;
+  }
+
+  .services {
+    top: 1rem;
+    padding: 3rem;
+  }
+
+  .services h2 {
+    font-size: 2.2rem;
+  }
+
+  .per-service {
+    width: 100%;
+  }
+
+  .services-box,
+  .addres-box {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1rem;
+  }
+
+  .services-box h4 {
+    font-size: 1rem;
+  }
+
+  .project-lead,
+  .team-heading {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .per-project-box {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 2rem;
+  }
+
+  .project-lead p {
+    font-size: 1.3rem;
+  }
+
+  .project-lead h2 {
+    font-size: 2rem;
+  }
+
+  .project-img {
+    width: 100%;
+  }
+
+  .project-img:hover {
+    width: 100%;
+  }
+
+  .project-name {
+    font-weight: bolder;
+  }
+
+  .team-heading h1 {
+    font-size: 2rem;
+  }
+
+  .team-heading p {
+    font-size: 1.5rem;
+  }
+
+  .team-pictures,
+  .ite-intro,
+  .collapse-button {
+    width: 70%;
+  }
+
+  .abt-team-box {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  } 
+
+  .team-pictures {
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 2rem;
+  }
+
+  .ite-intro {
+    margin: 2rem auto 0 auto;
+  }
+
+  .collapse-button {
+    margin: 0 auto;
+  }
+
+  .per-position h3 {
+    font-size: 1.2rem;
+  }
+
+  .per-position h4 {
+    font-size: 1rem;
+  }
+
+  .testimony-head {
+    padding: 2rem 10rem;
+  }
+
+  .per-comment {
+    padding: 1rem 30rem;
+  }
+
+  .addres-box {
+    padding: 3rem 15rem;
+  }
+
+  .addres-info {
+    width: 100%;
+  }
+
+  .addres-info .fa-map-marker {
+    padding-top: 2rem;
+  }
+
+  #fa-phone {
+    padding-bottom: 5rem;
+  }
+
+  #web-add {
+    padding-bottom: 3rem;
+  }
+
+  .footer-more-info,
+  .group-2-contact {
+    margin: 0;
+    padding: 0;
+  }
+
+  .group-2-contact {
+    width: 100%;
+  }
+
+  .go-up a {
+    right: 0.2rem;
+    bottom: 0;
+  }
+
+  .more-info {
+    flex-direction: row;
+    text-align: center;
+  }
+
+  #ite-about {
+    text-align: left;
+    padding: 0 2rem;
+  }
+
+  /*  About Page */
+  .abt-ite-page p {
+    text-align: center;
+    padding: 0 0 1rem 0;
+    font-size: 1.4rem;
+  }
+
+  .content p {
+    text-align: left;
+  }
+
+  .about-ite-home {
+    margin-top: 0;
+  }
+
+  .about-home {
+    height: 50vh;
+  }
+
+  #abt-team-head h1,
+  #abt-core-value h1 {
+    font-size: 1.5rem;
+  }
+
+  #abt-core-value p {
+    padding: 0;
+  }
+
+  .abt-per-pos {
+    padding-top: 33%;
+  }
+
+  #prof-pic {
+    position: relative;
+    top: 0;
+  }
+
+  #abt-team-head,
+  #abt-core-value {
+    width: 74%;
+  }
+
+  #abt-team-pic {
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+  }
+
+  .core-value-box {
+    flex-direction: row;
+    margin: 1rem 0;
+  }
+
+  #abt-core-value {
+    margin: 0 auto;
+    padding: 1rem 0;
+  }
+
+  /* Services Page */
+  .page-service {
+    margin-top: 2rem;
+  }
+
+  .services-page-holder {
+    display: flex;
+  }
+
+  .serv-page-box {
+    background: lightblue;
+    width: 80%;
+  }
+
+  .serv-page-img {
+    width: 10%;
+    margin-left: 4rem;
+    padding-top: 2rem;
+  }
+
+  .serv-page-box ul {
+    font-size: 1.4rem;
+    width: 80%;
+  }
+
+  .serv-page-box ul li span {
+    padding: 0.3rem;
+  }
+
+  .page-service h4 {
+    font-size: 2rem;
+  }
+
+  /* Projects Page */
+
+  .client-logo-box {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+  }
+
+  .clients p {
+    font-size: 1.4rem;
+  }
+
+  .clients h2 {
+    font-size: 2rem;
+  }
+
+  /* Contact Page */
+  .contact-box {
+    width: 82%;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    grid-column-gap: 1rem;
+  }
+
+  .name-field,
+  .contact-box {
+    display: grid;
+  }
+
+  #contact-us {
+    position: relative;
+    top: 10rem;
+  }
+
+  #contact-us #c-info {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+
+  .form-box {
+    top: 5rem;
+    width: 80%;
+  }
+
+  .name-field {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1rem;
+  }
+
+  .contact-form button {
+    width: 20%;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1.2rem;
+  }
+}
