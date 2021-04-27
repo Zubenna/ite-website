@@ -123,7 +123,7 @@
 @-webkit-keyframes titleAnimation {
   0% {
     opacity: 0;
-    transform: translateX(200px);
+    transform: translateX(50px);
   }
 
   8% {
@@ -138,7 +138,7 @@
 
   19% {
     opacity: 0;
-    transform: translateX(-400px);
+    transform: translateX(-200px);
   }
 
   25% {
@@ -153,7 +153,7 @@
 @-moz-keyframes titleAnimation {
   0% {
     opacity: 0;
-    transform: translateX(200px);
+    transform: translateX(50px);
   }
 
   8% {
@@ -168,7 +168,7 @@
 
   19% {
     opacity: 0;
-    transform: translateX(-400px);
+    transform: translateX(-200px);
   }
 
   25% {
@@ -183,7 +183,7 @@
 @-o-keyframes titleAnimation {
   0% {
     opacity: 0;
-    transform: translateX(200px);
+    transform: translateX(50px);
   }
 
   8% {
@@ -198,7 +198,7 @@
 
   19% {
     opacity: 0;
-    transform: translateX(-400px);
+    transform: translateX(-200px);
   }
 
   25% {
@@ -213,7 +213,7 @@
 @-ms-keyframes titleAnimation {
   0% {
     opacity: 0;
-    transform: translateX(200px);
+    transform: translateX(50px);
   }
 
   8% {
@@ -228,7 +228,7 @@
 
   19% {
     opacity: 0;
-    transform: translateX(-400px);
+    transform: translateX(-200px);
   }
 
   25% {
@@ -243,7 +243,7 @@
 @keyframes titleAnimation {
   0% {
     opacity: 0;
-    transform: translateX(200px);
+    transform: translateX(50px);
   }
 
   8% {
@@ -258,7 +258,7 @@
 
   19% {
     opacity: 0;
-    transform: translateX(-400px);
+    transform: translateX(-200px);
   }
 
   25% {
@@ -352,17 +352,36 @@
     transform: translateX(0);
   }
 }
-
 /* media query */
 
 /* Index page */
-@media screen and (max-width: 1140px) {
-  /* .cb-slideshow li div h3 { font-size: 140px } */
+@media (min-width: 576px) {
+  .tab button {
+    font-size: 1rem;
+  }
+
+  #tab-img1,
+  #tab-img2,
+  #tab-img3,
+  #tab-img4 {
+    width: 34rem;
+  }
+
+  .tab-text {
+    width: 25rem;
+    min-height: 13rem;
+  }
+
+  .go-up a {
+    right: 0.4rem;
+  }
+
+  /* About Profile */
+  .about-home {
+    height: 65vh;
+  }
 }
 
-@media screen and (max-width: 600px) {
-  /* .cb-slideshow li div h3 { font-size: 80px } */
-}
 
 @media (min-width: 768px) {
   .cb-slideshow li div h3 {
@@ -370,19 +389,24 @@
   }
 
   .tab button {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   #tab-img1,
   #tab-img2,
-  #tab-img3 {
+  #tab-img3,
+  #tab-img4 {
     height: 25rem;
     width: 35rem;
   }
 
+  .nav-list {
+    padding: 2rem;
+  }
+
   .tab-text {
     width: 35rem;
-    height: 25rem;
+    min-height: 28rem;
     font-size: 1.6rem;
   }
 
@@ -444,12 +468,49 @@
 }
 
 @media (min-width: 992px) {
+  .about-sub-menu {
+    position: absolute;
+    width: 80%;
+    margin-left: 10%;
+    display: none;
+    top: 5rem;
+    left: 0;
+  }
+
+  .about-box {
+    width: 80%;
+    height: 10rem;
+    background-color: var(--main-color-blue);
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+  }
+
+  .about-box a {
+    color: #fff;
+    font-size: 1.3rem;
+  }
+
+  .active{
+    background-color: var(--main-color-blue);
+    height: 3.7rem;
+  } 
+
+  .nav-link:hover {
+    padding-bottom: 0.2rem;
+    border-bottom: 4px solid var(--main-color-blue);
+  }
+
+  #sub-about a:hover + .about-sub-menu {
+    display: block;
+  }
+
   .nav-list {
     margin-bottom: 3rem;
-    width: 50vw;
+    width: 100%;
     height: 1.2rem;
     background: transparent;
-    margin-left: 11rem;
     position: relative;
     transform: translateX(0);
     flex-direction: row;
@@ -460,7 +521,7 @@
   .nav-link {
     font-size: 1rem;
     letter-spacing: normal;
-    transition: color0.5s;
+    transition: color 0.5s;
     font-family: var(--main-font);
     text-shadow: none;
     font-weight: bold;
@@ -486,8 +547,8 @@
 
   #comp-name {
     font-size: 1.2rem;
-    margin-left: 9rem;
-    width: 50%;
+    margin-left: 7.5rem;
+    width: 100%;
   }
 
   .nav {
@@ -498,7 +559,15 @@
   }
 
   .scroll-active {
-    background-color: var(--main-color-blue); 
+    background-color: var(--header-scroll);
+  }
+
+  .show-sub-menu {
+    display: block;
+  }
+
+  .hide-sub-menu {
+    display: none;
   }
 
   .core-area {
@@ -526,9 +595,8 @@
   }
 
   .tab-container,
-  .counter-box,
-  .services-box,
   .per-project-box,
+  .services-box,
   .addres-box {
     display: grid;
   }
@@ -544,7 +612,8 @@
 
   #tab-img1,
   #tab-img2,
-  #tab-img3 {
+  #tab-img3,
+  #tab-img4 {
     width: 100%;
     height: 100%;
   }
@@ -571,7 +640,6 @@
   }
 
   .services-box,
-  .counter-box,
   .addres-box {
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 1rem;
@@ -579,23 +647,6 @@
 
   .services-box h4 {
     font-size: 1rem;
-  }
-
-  .counter-holder {
-    height: 30rem;
-    padding-top: 6rem;
-  }
-
-  .per-counter .fas {
-    font-size: 3rem;
-  }
-
-  .counter {
-    font-size: 4.5rem;
-  }
-
-  .per-counter h4 {
-    font-size: 1.6rem;
   }
 
   .project-lead,
@@ -644,6 +695,11 @@
     width: 70%;
   }
 
+  .abt-team-box {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  } 
+
   .team-pictures {
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 2rem;
@@ -671,10 +727,6 @@
 
   .per-comment {
     padding: 1rem 30rem;
-  }
-
-  .news-letter {
-    margin-top: 2rem;
   }
 
   .addres-box {
@@ -725,7 +777,20 @@
   /*  About Page */
   .abt-ite-page p {
     text-align: center;
-    padding: 0;
+    padding: 0 0 1rem 0;
+    font-size: 1.4rem;
+  }
+
+  .content p {
+    text-align: left;
+  }
+
+  .about-ite-home {
+    margin-top: 0;
+  }
+
+  .about-home {
+    height: 50vh;
   }
 
   #abt-team-head h1,
@@ -759,6 +824,11 @@
   .core-value-box {
     flex-direction: row;
     margin: 1rem 0;
+  }
+
+  #abt-core-value {
+    margin: 0 auto;
+    padding: 1rem 0;
   }
 
   /* Services Page */
